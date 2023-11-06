@@ -1,6 +1,5 @@
 import { Island } from '@hubspot/cms-components';
 import TodoList from '../../islands/TodoList.jsx?island';
-import Layout from '../../Layout.jsx';
 
 /**
  * Here we are exporting the 3 requirements of a module: Component, fields, and meta
@@ -25,7 +24,7 @@ export const Component = ({ fieldValues, hublParameters = {} }) => {
   } = fieldValues;
   const { title } = hublParameters;
   return (
-    <Layout>
+    <>
       <h1>{title || 'Todo'}</h1>
       <Island
         module={TodoList}
@@ -35,7 +34,7 @@ export const Component = ({ fieldValues, hublParameters = {} }) => {
         buttonColor={buttonColor}
         completeTodoOpacity={completeTodoOpacity}
       />
-    </Layout>
+    </>
   );
 };
 export { fields } from './fields.jsx';
