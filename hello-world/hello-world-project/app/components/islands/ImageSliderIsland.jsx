@@ -20,13 +20,13 @@ export default function ImageSliderIsland({ props }) {
           slidesPerView={3}
           navigation
         >
-          {props.fieldValues.logo.length &&
-            props.fieldValues.logo.map((slide, index) => (
+          {props.fieldValues.slides.length &&
+            props.fieldValues.slides.map((slide, index) => (
               <SwiperSlide key={index} style={{ background: '#ececee' }}>
                 <img
-                  src={slide.src}
-                  alt={slide.alt}
-                  loading={slide.loading}
+                  src={slide.logo.src}
+                  alt={slide.logo.alt}
+                  loading={slide.logo.loading}
                   className={imageSliderStyles.image}
                 />
                 <h1>Slide #{index}</h1>

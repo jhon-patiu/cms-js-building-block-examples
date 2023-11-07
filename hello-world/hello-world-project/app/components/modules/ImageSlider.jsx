@@ -6,6 +6,7 @@ import {
   ImageField,
   TextField,
 } from '@hubspot/cms-components/fields';
+import { imageSliderDefault } from '../../mockdata/defaults.js';
 
 export const meta = {
   label: 'Global logo slider',
@@ -14,10 +15,11 @@ export const meta = {
 
 export const fields = (
   <ModuleFields>
-    {/* <RepeatedFieldGroup
+    <RepeatedFieldGroup
       name="slides"
       label="Slides"
-      occurrence={{ min: 4, max: 10 }}
+      occurrence={{ min: 4, max: 10, default: 4 }}
+      default={imageSliderDefault}
       required
     >
       <ImageField
@@ -29,17 +31,7 @@ export const fields = (
           loading: 'lazy',
         }}
       />
-    </RepeatedFieldGroup> */}
-    <ImageField
-      occurrence={{ min: 4, max: 10, default: 4 }}
-      name="logo"
-      label="Logo Image"
-      default={{
-        src: 'https://www.hububble.dev/hubfs/Demo%20Images/biglytics-ebook-10-ways-win-election.png',
-        alt: 'slide image',
-        loading: 'lazy',
-      }}
-    />
+    </RepeatedFieldGroup>
   </ModuleFields>
 );
 

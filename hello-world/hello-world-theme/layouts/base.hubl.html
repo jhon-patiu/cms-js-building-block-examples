@@ -19,8 +19,8 @@
 <body>
 	<div class="body-wrapper {{ builtin_body_classes }}">
 		{% block header %}
-		{% js_module "header"
-		path="@projects/hello-world-project/hello-world-app/components/modules/Header.jsx",
+		{% module "header"
+		path="@projects/hello-world-project/hello-world-app/components/modules/Header",
 		brandColor="{{ theme.brand_color }}",
 		no_wrapper=True %}
 		{% endblock header %}
@@ -32,8 +32,8 @@
 		{% endblock body %}
 
 		{% block footer %}
-		{% js_module "footer"
-		path="@projects/hello-world-project/hello-world-app/components/modules/Footer.jsx",
+		{% module "footer"
+		path="@projects/hello-world-project/hello-world-app/components/modules/Footer",
 		no_wrapper=True %}
 		{% endblock footer %}
 	</div>

@@ -18,3 +18,11 @@ export const headerNavLinksDefault = [
     text: 'nav 3',
   },
 ];
+
+export const imageSliderDefault = Array(5).fill({
+  logo: {
+    src: 'https://www.hububble.dev/hubfs/Demo%20Images/biglytics-ebook-10-ways-win-election.png',
+    alt: 'alt text',
+    loading: 'lazy',
+  },
+});

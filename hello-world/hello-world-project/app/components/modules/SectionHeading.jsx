@@ -23,7 +23,7 @@ export const fields = (
       />
       <TextField label="Sub Heading" name="sub" default="Sub heading text..." />
     </FieldGroup>
-    <BooleanField label="Align Center" name="align_center" default="false" />
+    <BooleanField label="Align Center" name="align_center" default={false} />
   </ModuleFields>
 );
 
