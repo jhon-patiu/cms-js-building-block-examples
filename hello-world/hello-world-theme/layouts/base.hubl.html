@@ -19,7 +19,7 @@
 <body>
 	<div class="body-wrapper {{ builtin_body_classes }}">
 		{% block header %}
-		{% js_module
+		{% js_module "header"
 		path="@projects/hello-world-project/hello-world-app/components/modules/Header.jsx",
 		brandColor="{{ theme.brand_color }}",
 		no_wrapper=True %}
@@ -32,7 +32,7 @@
 		{% endblock body %}
 
 		{% block footer %}
-		{% js_module
+		{% js_module "footer"
 		path="@projects/hello-world-project/hello-world-app/components/modules/Footer.jsx",
 		no_wrapper=True %}
 		{% endblock footer %}

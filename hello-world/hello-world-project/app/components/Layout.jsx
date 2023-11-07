@@ -1,6 +1,6 @@
 import layoutStyles from '../styles/layout.module.css';
-import Footer from './modules/Footer.jsx';
-import Header from './modules/Header.jsx';
+import { Component as Footer } from './modules/Footer.jsx';
+import { Component as Header } from './modules/Header.jsx';
 
 function Layout({ children }) {
   return (
