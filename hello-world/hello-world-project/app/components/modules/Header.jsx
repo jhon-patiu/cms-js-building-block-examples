@@ -54,6 +54,7 @@ export const Component = (props) => {
   return (
     <header className={headerStyles.header}>
       <div className={containerStyles.container}>
+        {/* <h1>{props.passedTitle}</h1> */}
         <nav className={headerStyles.nav}>
           {props.fieldValues.nav_links.map((item, index) => (
             <a key={index} href={item.link.href}>
